@@ -1,0 +1,78 @@
+/* Sidebar Container */
+.sidebar {
+    width: 250px;                 /* Fixed width for the sidebar */
+    height: 100vh;                /* Full viewport height */
+    background-color: #f8f9fa;    /* Light gray background */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;       /* Stack items vertically */
+    align-items: flex-start;      /* Align items to the left */
+    padding: 20px 15px;           /* Add padding inside the sidebar */
+    box-sizing: border-box;
+  }
+  
+  /* Sidebar Item */
+  .sidebar-item {
+    display: flex;                /* Align icon and text horizontally */
+    align-items: center;          /* Vertically center content */
+    width: 100%;                  /* Take full width */
+    padding: 10px 15px;           /* Spacing around each item */
+    margin-bottom: 15px;          /* Space between items */
+    border-radius: 8px;           /* Rounded corners */
+    background-color: #ffffff;    /* White background for each item */
+    transition: all 0.3s ease;    /* Smooth hover effects */
+    text-align: left;             /* Align text to the left */
+    cursor: pointer;              /* Indicate clickable items */
+    text-decoration: none;        /* Remove underline from links */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+  }
+  
+  /* Sidebar Item Hover Effect */
+  .sidebar-item:hover {
+    background-color: #e2e6ea;    /* Slightly darker background on hover */
+    transform: scale(1.02);       /* Subtle zoom effect */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+  }
+  
+  /* Sidebar Icon */
+  .sidebar-item img {
+    height: 30px;                 /* Icon size */
+    width: 30px;                  /* Uniform dimensions */
+    margin-right: 15px;           /* Space between icon and text */
+    object-fit: contain;          /* Ensure image scales properly */
+  }
+  
+  /* Sidebar Text */
+  .sidebar-item p {
+    font-size: 16px;              /* Text size */
+    color: #333333;               /* Dark gray text */
+    font-weight: 500;             /* Slightly bold for readability */
+    margin: 0;                    /* Remove default margin */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%; 
+      max-width: none; 
+      height: auto;             /* Narrower sidebar for smaller screens */
+      padding: 30px 0px; 
+      flex-direction: row; 
+      justify-content: center;       /* Adjust padding */
+    }
+  
+    .sidebar-item {
+      margin: 0;       /* Smaller gap between items */
+    }
+  
+    .sidebar-item img {
+      height: 25px;               /* Smaller icon size */
+      width: 25px;
+      margin-right: 10px;         /* Adjust spacing */
+    }
+  
+    .sidebar-item p {
+      font-size: 14px;            /* Smaller text size */
+    }
+  }
+  
